@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+}
+.body-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Top and Bottom Bars
+   gray	   efedf2
+   orange1 ffa726
+   orange2 ff9e61
+*/
+.top-bar, .bottom-bar {
+    background-color: #ff9e61;
+    color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-end; /* Align content to the right */
+}
+.top-bar {
+    position: sticky;
+    top: 0;
+}
+.bottom-bar {
+    position: sticky;
+    bottom: 0;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: auto;
+    font-style: italic;
+}
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+/* Content Section */
+.content {
+    width: 100%;
+    padding: 20px 20px 0px; /* Adjust padding for visual spacing from top and bottom bars */
+    text-align: center;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+p.description {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+.screenshots {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5em 0;
+}
+.screenshot {
+    width: 35%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Link Styles */
+a {
+    color: #333;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+/* FAQ Section Styles */
+.faq-section {
+    margin-top: 2em;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.faq-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #EFEDF2;
+    padding-bottom: 5px;
+}
+
+.faq-question {
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #f8f8f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question p {
+    margin: 0.5em 0;
+}
+
+.faq-question strong {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.faq-question p + p {
+    color: #555;
+}
+
+/* Adjustments for links in the FAQ */
+.faq-question a {
+    color: #333;
+    text-decoration: underline;
+    font-weight: bold;
+}
