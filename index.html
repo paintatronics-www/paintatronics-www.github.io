@@ -37,6 +37,29 @@
       Developed by&nbsp;<a href="https://larumbedynamics.com" target="_blank">Larumbe Dynamics, LLC</a>
     </div>
   </div>
+  <!-- Full-screen overlay for showing the screenshot -->
+  <div class="overlay" id="overlay">
+    <img id="overlayImage" src="" alt="Full-size Screenshot">
+  </div>
 
+  <script>
+    // JavaScript to handle click events
+    const screenshots  = document.querySelectorAll('.screenshot');
+    const overlay      = document.getElementById('overlay');
+    const overlayImage = document.getElementById('overlayImage');
+
+    screenshots.forEach(screenshot => {
+      screenshot.addEventListener('click', () => {
+        overlayImage.src = screenshot.src;
+        overlay.style.display = 'flex';
+      });
+    });
+
+    // Hide the overlay when clicked
+    overlay.addEventListener('click', () => {
+      overlay.style.display = 'none';
+      overlayImage.src = ''; // Clear the image to prevent background loading
+    });
+  </script>
 </body>
 </html>
