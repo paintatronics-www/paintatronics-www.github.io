@@ -81,7 +81,6 @@ a {
 }
 
 
-
 /* FAQ Section Styles */
 .faq-section {
     margin-top: 2em;
@@ -125,7 +124,7 @@ a {
     font-weight: bold;
 }
 
-/* Full screen Screenshot overlay */
+/* Full screen screenshot overlay */
 .overlay {
   display: none;
   position: fixed;
@@ -142,4 +141,5 @@ a {
 .overlay img {
   max-width: 90%;
   max-height: 90%;
+  border-radius: 8px;
 }
