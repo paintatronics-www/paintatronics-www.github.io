@@ -17,12 +17,12 @@ body {
     min-height: 100vh;
 }
 /* Top and Bottom Bars
-   gray	   efedf2
-   orange1 ffa726
-   orange2 ff9e61
+   gray	       efedf2
+   orange      ff9e61
+   dark green  1e828b
 */
 .top-bar, .bottom-bar {
-    background-color: #ff9e61;
+    background-color: #1e828b;
     color: #333;
     padding: 10px;
     display: flex;
@@ -30,6 +30,10 @@ body {
     width: 100%;
     box-sizing: border-box;
     justify-content: flex-end; /* Align content to the right */
+    color: #edf8f8;
+}
+.top-bar a, .bottom-bar a {
+    color: #edf8f8;
 }
 .top-bar {
     position: sticky;
@@ -72,6 +76,7 @@ p.description {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 /* Link Styles */
 a {
@@ -79,7 +84,6 @@ a {
     text-decoration: underline;
     font-weight: bold;
 }
-
 
 /* FAQ Section Styles */
 .faq-section {
