@@ -100,10 +100,11 @@ a {
     padding-bottom: 5px;
 }
 
+/* light-gray question background f8f8f9 */
 .faq-question {
     margin: 1em 0;
     padding: 1em;
-    background-color: #f8f8f9;
+    background-color: #edf8f8;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
